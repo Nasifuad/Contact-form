@@ -1,0 +1,178 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+ 
+ .attribution { font-size: 11px; text-align: center; }
+ .attribution a { color: hsl(228, 45%, 44%); }
+
+
+ *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+ }
+ body{
+    height: 100vh;
+    width: 100vw;
+    background-color: hsl(148, 38%, 91%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Karla';
+    
+ }
+ span{color: hsl(169, 82%, 27%);}
+ .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+ #success{
+    background-color: hsl(187, 24%, 22%);
+    color: hsla(0, 0%, 100%, 0.733);
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+    border-radius: 10px;
+    display: none;
+
+ }
+ .sent{
+    font-size: 14px;
+ }
+ .intouch{
+    font-size: 12px;
+ }
+ .form{
+    /* width: 600px; */
+    background-color:  hsl(0, 0%, 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 2vh;
+    padding: 5vh;
+    border-radius: 2%;
+ }
+ .contact{
+    font-family: 'Karla';
+    font-weight: 700;
+     font-size: 20px;
+     font-weight: bolder;
+     color: rgba(0, 0, 0, 0.836);
+ }
+ .names {
+   display: flex;
+   gap: 2vh;
+ }
+ .first, .second{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    /* flex-direction: column; */
+    /* width: 100px; */
+ }
+ label{
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.651);
+ }
+#fname , #lname{
+    width:100%;
+    height: 30px;
+    border-radius: 5px;
+    padding-left: 10px;
+    border: 0.5px solid rgba(0, 0, 0, 0.301);
+}
+#fname:hover , #lname:hover{
+    border: 1px solid hsl(169, 82%, 27%);
+}
+.email{
+    display: flex;
+    flex-direction: column;
+    /* width: 200px; */
+    gap: 5px;
+}
+#email{
+    padding-left: 10px;
+
+    height: 30px;
+    border-radius: 5px;
+    border: 0.5px solid rgba(0, 0, 0, 0.301);
+}
+#email:hover, #msg:hover{
+    border: 1px solid hsl(169, 82%, 27%);
+
+}
+#fname, #lname,#msg,#email:focus{
+    outline: none;
+}
+.type{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.typeOF{
+    display: flex;
+    gap: 2vh;
+
+}
+.general, .support{
+    padding-left: 10px;
+    display: flex;
+    justify-content:start;
+    align-items: center;
+    gap: 5px;
+    width: 50%;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.301);
+}
+.general:hover , .support:hover{
+    border: 1px solid hsl(169, 82%, 27%);
+    background-color: hsl(148, 38%, 91%);
+
+}
+.general:focus, .support:active{
+    background-color: hsl(148, 38%, 91%);
+}
+.msg{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    
+}
+#msg{
+    
+    border: 1px solid rgba(0, 0, 0, 0.301);
+    height: 15vh;
+    border-radius: 5px;
+    padding-left: 10px;
+    
+
+
+}
+#chk:checked, #chk::before ,#chk::after{
+    color: hsl(169, 82%, 27%);
+}
+.consent{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.cons{
+    display: flex;
+    gap: 10px;
+}
+#submit{
+    width: 100%;
+    background-color: hsl(169, 82%, 27%);
+    border: none;
+    color: white;
+    height: 30px;
+    border-radius: 5px;
+}
+.fname_error, .lname_error , .email_error, .query_error, .msg_error,.consent_error{
+    display: none;
+}

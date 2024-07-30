@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- displays site properly based on user's device -->
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./assets/images/favicon-32x32.png"
+        >
+        <title>Frontend Mentor | Contact form</title>
+        <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="success_msg_box" id="success">
+                <p class="sent"> ✔ Message Sent</p>
+                <p class="intouch">Thank you for completing the form. We will be in touch</p>
+            </div>
+            <div class="form">
+                <div class="contact">Contact Us</div>
+                <div class="names">
+                    <div class="first">
+                        <label for="fname">
+                            First Name
+                            <span> *</span>
+                        </label>
+                        <input type="text" id="fname">
+                        <label
+                            for="fname"
+                            class="fname_error"
+                            id="ferror"
+                            style="color: red;"
+                        >This filed is required</label>
+                    </div>
+                    <div class="second">
+                        <label for="fname">
+                            Last Name
+                            <span> *</span>
+                        </label>
+                        <input type="text" id="lname">
+                        <label
+                            for="lname"
+                            class="lname_error"
+                            id="lerror"
+                            style="color: red;"
+                        >This filed is required</label>
+                    </div>
+                </div>
+                <div class="email">
+                    <label for="email">
+                        Email Address
+                        <span> *</span>
+                    </label>
+                    <input type="email" name="email" id="email">
+                    <label
+                        for="email"
+                        id="eemail"
+                        class="email_error"
+                        style="color: red;"
+                    >Please enter a valid email address</label>
+                </div>
+                <div class="type">
+                    <label for="box">
+                        Query type
+                        <span> *</span>
+                    </label>
+                    <div class="typeOF">
+                        <div class="general">
+                            <input type="radio" name="General" id="gen">
+                            <label for="radio">General Enquiry</label>
+                        </div>
+                        <div class="support">
+                            <input type="radio" name="General" id="sup">
+                            <label for="radio">Support Request</label>
+                        </div>
+                    </div>
+                    <label
+                        for="qury"
+                        class="query_error"
+                        id="radio_error"
+                        style="color: red;"
+                    >Please select a query type</label>
+                </div>
+                <div class="msg">
+                    <label for="msg">Message</label>
+                    <input type="text" name="" id="msg">
+                    <label
+                        for="msg"
+                        class="msg_error"
+                        id="emsg"
+                        style="color: red;"
+                    >This filed is required</label>
+                </div>
+                <div class="consent">
+                    <div class="cons">
+                        <input type="checkbox" name="" id="chk">
+                        <label for="chk">
+                            I consent to being contacted by the team
+                            <span> *</span>
+                        </label>
+                    </div>
+                    <div class="err_cons">
+                        <label
+                            for="consent"
+                            class="consent_error"
+                            id="check_error"
+                            style="color: red;"
+                        >To submit this form, Please consent to being contacted</label>
+                    </div>
+                </div>
+                <div class="submit">
+                    <button id="submit">Submit</button>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
