@@ -176,3 +176,30 @@
 .fname_error, .lname_error , .email_error, .query_error, .msg_error,.consent_error{
     display: none;
 }
+
+
+@media screen and (max-width : 300px) {
+    .names {
+        display: flex;
+        flex-direction: column;
+        gap: 2vh;
+      }
+      .typeOF{
+        display: flex;
+        flex-direction: column;
+        gap: 2vh;
+    
+    }
+    .general, .support{
+        /* padding-left: 10px; */
+        display: flex;
+        justify-content:start;
+        align-items: center;
+        text-align: center;
+        gap: 5px;
+        width: 100%;
+        height: 30px;
+        border-radius: 5px;
+        border: 1px solid rgba(0, 0, 0, 0.301);
+    }
+}
